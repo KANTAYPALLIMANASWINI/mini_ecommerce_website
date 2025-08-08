@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Amazon - StyleShine</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm text-seconadry">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">🛍️ StyleShine</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex ms-auto me-3">
+          <input class="form-control" type="search" placeholder="Search products" />
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ <!-- Auto Carousel -->
+  <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.dXLuAVhOqlt80oDDY_Se-wHaCU?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"class="d-block w-100" alt="1st image">
+      </div>
+      <div class="carousel-item">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.qLiSKzs4K2HZMDQtkZNXYgHaDw?r=0&w=650&h=330&rs=1&pid=ImgDetMain&o=7&rm=3" class="d-block w-100" alt="2nd image">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.skunexus.com/hubfs/Industries/Electronics%20Industries%20SkuNexus.webp" class="d-block w-100" alt="3 rd image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Cards -->
+  <section id="products" class="py-5" class="p-0">
+
+    <div class="container text-center">
+      <h2 class="mb-4"  style="color: black;">Featured Products</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://miro.medium.com/v2/resize:fit:1024/0*lj1T7T8VRvnx_V6v.jpg" class="card-img-top" alt="Product">
+            <div class="card-body">
+              <h5 class="card-title">Wireless Headphones</h5>
+              <p class="text-warning">⭐⭐⭐⭐☆</p>
+              <p class="text-primary fw-bold">$49.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.6ONdTkhV0Dyh2uLDc3NmjwHaHa?r=0&pid=ImgDet&w=178&h=178&c=7&dpr=1.5&o=7&rm=3" class="card-img-top" alt="Product">
+            <div class="card-body">
+              <h5 class="card-title">Smart Watch</h5>
+              <p class="text-warning">⭐⭐⭐⭐⭐</p>
+              <p class="text-primary fw-bold">$89.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://m.media-amazon.com/images/I/71M-mlEsEvL.jpg" class="card-img-top" alt="Product">
+            <div class="card-body">
+              <h5 class="card-title">Laptop Stand</h5>
+              <p class="text-warning">⭐⭐⭐⭐☆</p>
+              <p class="text-primary fw-bold">$39.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img src="data:image/webp;base64,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" class="card-img-top" alt="Product">
+            <div class="card-body">
+              <h5 class="card-title">HD Camera</h5>
+              <p class="text-warning">⭐⭐⭐☆☆</p>
+              <p class="text-primary fw-bold">$120.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!----FAQ SECTION-->
+  <section id="faq" class="faq-section py-5 p-0" style="background-color: skyblue;">
+<section class="faq-section py-5"style="background-color: skyblue;" class="p-0">
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <!-- Left: Accordion -->
+      <div class="col-md-6">
+        <h2 class="mb-4 mt-0" style="color: black;">Frequently Asked Questions</h2>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                What is StyleShine?
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                StyleShine is an online platform offering stylish and trending products at affordable prices.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                How do I place an order?
+              </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Just browse the items, add to cart, and proceed to checkout!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                Can I return items?
+              </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Yes! We offer easy 7-day return policy.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <!-- Right: Image -->
+      <div class="col-md-6 text-center">
+  <img
+    src="https://tse4.mm.bing.net/th/id/OIP.Bgmtz4kZpN8jzTKh8uOSeQHaDi?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    alt="FAQ"
+    class="img-fluid w-100 h-100 faq-img-animate"
+    style="object-fit: cover;"
+  />
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonial-section py-5" class="p-0">
+    <div class="container">
+      <h2 class="text-center mb-5"  style="color: black;">What Customers Say</h2>
+      <div class="row align-items-center shadow rounded">
+        <!-- Left Image -->
+        <div class="col-md-6 p-0">
+          <img src="https://www.shutterstock.com/image-photo/satisfied-female-customer-on-cashier-600w-1232814310.jpg" class="img-fluid testimonial-image" alt="Customer">
+        </div>
+        <!-- Right Text -->
+        <div class="col-md-6 p-4 bg-white">
+          <h4>Asha Reddy</h4>
+          <p class="text-muted">Fashion Blogger</p>
+          <p><em>"StyleNest products are top quality. The delivery was fast and packaging was beautiful!"</em></p>
+          <hr>
+          <h4>Vinay Gupta</h4>
+          <p class="text-muted">Gadget Reviewer</p>
+          <p><em>"Super impressed with the collection and pricing. I will shop again for sure!"</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Form -->
+  <section id="contact"  style="background-color: skyblue;" class="p-0">
+    <div class="container" style="background-color: skyblue,">
+      <h2 class="text-center mb-4"  style="color: black;">Have Questions? Contact Us</h2>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+ 
+  <footer class="text-center py-3 bg-primary text-white">
+    &copy; 2025 StyleShine. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
